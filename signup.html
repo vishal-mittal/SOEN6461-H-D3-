@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<script>
+function checkTextField(field) {
+    if (field.value == '') {
+        alert("Field is empty");
+    }
+}
+
+</script>
+<head>
+  <title>Signup</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+           <h1><a href="index.html">Open Source Survey<span class="logo_colour">System</span></a></h1>
+		   <h2>By Software Developer</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="examples.html">Examples</a></li>
+          
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Latest News</h3>
+        <h4>Red Hat Enterprise Linux 6.5 arrives</h4>
+        <h5>November 21, 2013</h5>
+        <p>Red Hat's newest update for its flagship enterprise Linux, Red Hat Enterprise Linux 6.5, is ready to go.<br/><a href="http://www.zdnet.com/red-hat-enterprise-linux-6-5-arrives-7000023500/">Read more</a></p>
+        <p></p>
+        <h4>Will a shot of Android be enough to save BlackBerry?</h4>
+        <h5>November 19, 2013 </h5>
+        <p>BlackBerry is a sick company. Will a dose of Android apps give it a shot at health?<br/><a href="http://www.zdnet.com/will-a-shot-of-android-be-enough-to-save-blackberry-7000023331/">Read more</a></p>
+        
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <form name="form1" method="post" action="SignUp.php">
+        <h2>Signup</h2>
+			<form id="searchform" method="get" action="SignUp.php" onsubmit="return checkvalue(this)">
+			<table cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td>
+				<h4> User Name <h4>
+				</td>
+				<td>
+				<input type="text" name="myusername" id="s" size="15" value="" onblur="checkTextField(this);"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<h4> Password <h4>
+				</td>
+				<td>
+				<input type="Password" name="mypassword" id="s" size="15" value="" onblur="checkTextField(this);"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<h4> Re-Password<h4>
+				</td>
+				<td>
+				<input type="Password" name="mypassword2" id="s" size="15" value=""onblur="checkTextField(this);" />
+				</td>
+				<tr>
+				<td>
+				<h4> EmailId<h4>
+				</td>
+				<td>
+				<input type="text" name="EmailId" id="s" size="15" value="" onblur="checkTextField(this);"/>
+				</td>
+			</tr>
+			</tr>
+				<tr align="center">
+				<td colspan="2">
+				<button >Submit</button>
+				</td>
+				
+			</tr>
+			
+				</table>
+				</form>
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; simplestyle_1 | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a>
+    </div>
+  </div>
+</body>
+</html>
